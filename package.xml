@@ -1,7 +1,7 @@
 <package>
-  <name>protobuf_catkin</name>
+  <name>protobuf3_catkin</name>
   <version>0.0.0</version>
-  <description>protobuf_catkin</description>
+  <description>protobuf3_catkin</description>
   <maintainer email="slynen@ethz.ch">Simon Lynen</maintainer>
 
   <license>See package</license>
