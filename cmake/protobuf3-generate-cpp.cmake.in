@@ -134,7 +134,7 @@ function(PROTOBUF_CATKIN_GENERATE_CPP2 BASE_PATH SRCS HDRS)
              "${OUTPUT_BASE_FILE_NAME}.pb.h"
              "${PROTO_GENERATED_HEADERS_INSTALL_DIR}/${FIL_WE}.pb.h"
              "${PROTO_SHARE_FOLDER}/${FIL_WE}.proto"
-      COMMAND  "${CATKIN_DEVEL_PREFIX}/bin/protoc"
+      COMMAND  "@CATKIN_DEVEL_PREFIX@/bin/protoc"
       ARGS --cpp_out ${OUTPUT_FOLDER_BASE} ${PYTHON_PROTOC_ARG_FLAG} ${PYTHON_PROTOC_ARG_VALUE} ${_protobuf_include_path} ${ABS_FIL}
       COMMAND ${CMAKE_COMMAND} -E copy
               "${OUTPUT_BASE_FILE_NAME}.pb.h"
