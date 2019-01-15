@@ -9,7 +9,7 @@ include(ExternalProject)
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ExternalProject_Add(protobuf3_src
-  URL https://github.com/google/protobuf/releases/download/v3.5.0/protobuf-all-3.5.0.tar.gz
+  URL https://github.com/protocolbuffers/protobuf/archive/v3.5.0.tar.gz
   UPDATE_COMMAND ""
   CONFIGURE_COMMAND cd ../protobuf3_src && ./autogen.sh && ./configure --with-pic --prefix=${CATKIN_DEVEL_PREFIX}
   BUILD_COMMAND cd ../protobuf3_src && make -j8
